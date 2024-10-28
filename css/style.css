@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+.btn-primary{
+    background-color: #e35629;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #cc4e23;
+    border: none;
+}
+
+.nav-link{
+    color: #333 !important;
+}
+
+.nav-link:hover{
+    color: #e35629 !important;
+    transition: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.nav-link.active{
+    color: #e35629 !important;
+}
+
+
+.bg-custom {
+    min-height: 100vh; 
+    background-image: url('/img/gestor-de-gastos.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.col-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.texto{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.col-12 h1{
+    color: #cc4e23;
+    text-align: center;
+
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    font-variation-settings:
+    "wdth" 100;
+    
+}
+
+.col-12 p{
+    text-align: center;
+    font-size: 1.2rem;
+
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+
+  
+  /* Fondo del body */
+  .formularios {
+    background-image: url('/img/gestor-de-gastos-II.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+  }
+
+  .formularios .imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+  }
+
+  
+  /* Estilos del formulario */
+  #formulario {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #formulario h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: regular;
+    font-variation-settings:
+    "wdth" 100;
+  }
+  
+  /* Estilos para cada grupo de formulario */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #e35629;
+    outline: none;
+  }
+  
+  /* Estilos del mensaje de error */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Botón de enviar */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #e35629;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #cc4e23;
+  }
+
+  .login-link{
+    color: #e35629;
+  }
+
+  .login-link:hover{
+    color: #cc4e23;
+    text-decoration: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Estilos para el texto de copyright */
+.copyright {
+    color: #555;
+}
+
+.logo img{
+    margin: 20px;
+}
+
+/* Estilos para los enlaces del menú */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: #555;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #e35629;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .logo img{
+        margin: 5px;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .logo, .copyright {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 960px) {
+    .col-12 img{
+        display: none;
+    }
+}
+
+
+
+
