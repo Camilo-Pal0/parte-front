@@ -227,7 +227,7 @@
     color: #e35629;
     text-decoration: none;
 }
-@keyframes show{
+/* @keyframes show{
   from{
     opacity: 0; scale: 10%;
   }
@@ -264,7 +264,7 @@
 
   animation-timeline: --reveal;
   animation-range: entry 15% cover 50%;
-}
+} */
 
 #formulario{
   view-timeline-name: --reveal;

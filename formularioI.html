@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/donacion (1).png" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styleII.css">
+    <script src="scrollreveal.js"></script>
 <body>
 
     <!-- Navbar -->
@@ -52,7 +53,7 @@
 
     <!-- Contenedor del formulario de inicio de sesión -->
     <div class="formularios">
-        <form id="login-formulario">
+        <form id="login-formulario" class="forms">
             <div class="imagen">
                 <img src="img/donacion (1).png" alt="Logo" width="80" height="80">
             </div>
@@ -94,8 +95,22 @@
     </div>
 </footer>
 
+    <!-- Carga de scripts necesarios para Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Carga de scripts de Firebase (se debe cargar antes de cualquier script que los use) -->
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Carga de tu script personalizado -->
+    <script type="module" src="controllers/controladorInicioSesion.js"></script>
+    <script src="/controllers/animacionScroll.js"></script>
+
 </body>
 </html>

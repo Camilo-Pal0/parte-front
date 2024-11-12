@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('/img/gestor-de-gsatos-IIII.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+#bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin: 20px;
+}
+
+.btns{
+    margin: 2px;
+}
+
+.btn-primary{
+    background-color: #e35629;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #cc4e23;
+    border: none;
+}
+
+.nav-link{
+    color: #333 !important;
+}
+
+.nav-link:hover{
+    color: #e35629 !important;
+    transition: 0.3s;
+    animation-duration: 0.3s;
+}
+
+.nav-link.active{
+    color: #e35629 !important;
+}
+
+p{  
+    text-align: center;
+    font-size: 1.2em;
+
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-variation-settings:
+    "wdth" 100;
+}
